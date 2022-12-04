@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, #root, #defaultLayout, #guestLayout {
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    background-color: #f6f6f6;
+}
+
+/* Login/Signup forms*/
+
+.login-signup-form {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.login-signup-form .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+.login-signup-form .title {
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+.login-signup-form .form input {
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 2px solid #e6e6e6;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+.login-signup-form .form input:focus {
+    border-color: #7308a7;
+}
+
+.login-signup-form .form button {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #7308a7;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 16px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.login-signup-form .form button:hover,
+.login-signup-form .form button:active,
+.login-signup-form .form button:focus {
+    background: #7308a7;
+}
+
+.login-signup-form .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 16px;
+}
+
+.login-signup-form .form .message a {
+    color: #7308a7;
+    text-decoration: none;
+}
+/* Login/Signup form */
+
+
+
+
+#defaultLayout {
+    display: flex;
+}
+
+#defaultLayout aside {
+    width: 300px;
+    background-color: #7308a7;
+    padding: 2rem 1rem
+}
+
+#defaultLayout aside > a{
+    display: block;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+#defaultLayout aside > a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#defaultLayout .content {
+    flex: 1;
+}
+
+#defaultLayout header {
+    height: 80px;
+    padding: 2rem 3rem;
+    background-color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#defaultLayout main {
+    padding: 2rem;
+}

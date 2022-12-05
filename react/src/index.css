@@ -17,6 +17,7 @@ body {
     margin: 0;
     padding: 0;
     font-size: 14px;
+    color: #212121;
     background-color: #f6f6f6;
 }
 
@@ -36,12 +37,15 @@ input:focus {
     border-color: #5b08a7;
 }
 
-button {
+.btn,
+.btn-add,
+.btn-edit,
+.btn-delete {
     font-family: "Roboto", sans-serif;
     outline: 0;
     background: #5b08a7;
-    width: 100%;
     border: 0;
+    text-decoration: none;
     padding: 15px;
     color: #FFFFFF;
     font-size: 16px;
@@ -50,10 +54,56 @@ button {
     cursor: pointer;
 }
 
-button:hover,
-button:active,
-button:focus {
+.btn-block {
+    width: 100%;
+}
+
+.btn-add,
+.btn-edit,
+.btn-delete{
+    padding: 0.5rem 0.75rem;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.btn-add {
+    background-color: #00a762;
+}
+.btn-delete {
+    background-color: #b72424;
+}
+
+.btn-logout {
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    color: #212121;
+    transition: all 0.3s;
+    border-radius: 6px;
+}
+.btn-logout:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
     background: #5b08a7;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+table > thead > tr > th {
+    text-align: left;
+    padding: 0.5rem 0.5rem;
+    background-color: #efefef;
+}
+
+table > tbody > tr > td {
+    padding: 0.5rem 0.5rem;
+    border-bottom: 1px solid #efefef;
 }
 
 .card {
@@ -61,6 +111,27 @@ button:focus {
     border-radius: 0.5rem;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     padding: 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+}
+
+.alert {
+    padding: 1rem 1.5rem;
+    background-color: #ff4040;
+    color: white;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.notification {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 100;
+    padding: 1rem 1.5rem;
+    background-color: #00a762;
+    color: white;
+    border-radius: 0.5rem;
 }
 
 /* Login/Signup forms*/

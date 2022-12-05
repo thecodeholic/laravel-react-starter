@@ -22,7 +22,7 @@ axiosClient.interceptors.response.use((response) => {
     //Show not found
   }
 
-  return error;
+  throw error;
 })
 
 export default axiosClient

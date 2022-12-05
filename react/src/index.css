@@ -16,7 +16,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 20px;
+    font-size: 14px;
     background-color: #f6f6f6;
 }
 
@@ -107,14 +107,14 @@ button:focus {
 }
 
 #defaultLayout aside {
-    width: 300px;
+    width: 240px;
     background-color: #5b08a7;
-    padding: 2rem 1rem
+    padding: 1rem
 }
 
 #defaultLayout aside > a {
     display: block;
-    padding: 1rem 2rem;
+    padding: 0.75rem 1rem;
     border-radius: 6px;
     color: white;
     text-decoration: none;

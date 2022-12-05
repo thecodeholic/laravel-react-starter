@@ -11,7 +11,11 @@ export const ContextProvider = ({children}) => {
 
   const setToken = (token) => {
     _setToken(token)
-    localStorage.setItem('ACCESS_TOKEN', token);
+    if (token) {
+      localStorage.setItem('ACCESS_TOKEN', token);
+    } else {
+      localStorage.removeItem('ACCESS_TOKEN');
+    }
   }
 
   return (

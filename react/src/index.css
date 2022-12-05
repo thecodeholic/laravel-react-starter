@@ -20,31 +20,9 @@ body {
     background-color: #f6f6f6;
 }
 
-/* Login/Signup forms*/
-
-.login-signup-form {
-    width: 360px;
-    padding: 8% 0 0;
-    margin: auto;
-}
-
-.login-signup-form .form {
-    position: relative;
-    z-index: 1;
-    background: #FFFFFF;
-    max-width: 360px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
-}
-.login-signup-form .title {
-    font-size: 20px;
-    margin-bottom: 1rem;
-}
-.login-signup-form .form input {
+input {
     outline: 0;
-    background: #f2f2f2;
+    background: #ffffff;
     width: 100%;
     border: 2px solid #e6e6e6;
     margin: 0 0 15px;
@@ -53,14 +31,15 @@ body {
     font-size: 14px;
     transition: all 0.3s;
 }
-.login-signup-form .form input:focus {
-    border-color: #7308a7;
+
+input:focus {
+    border-color: #5b08a7;
 }
 
-.login-signup-form .form button {
+button {
     font-family: "Roboto", sans-serif;
     outline: 0;
-    background: #7308a7;
+    background: #5b08a7;
     width: 100%;
     border: 0;
     padding: 15px;
@@ -71,10 +50,42 @@ body {
     cursor: pointer;
 }
 
-.login-signup-form .form button:hover,
-.login-signup-form .form button:active,
-.login-signup-form .form button:focus {
-    background: #7308a7;
+button:hover,
+button:active,
+button:focus {
+    background: #5b08a7;
+}
+
+.card {
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.25rem 1.5rem;
+}
+
+/* Login/Signup forms*/
+
+.login-signup-form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-signup-form .form {
+    width: 360px;
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.login-signup-form .title {
+    font-size: 20px;
+    margin-bottom: 1rem;
 }
 
 .login-signup-form .form .message {
@@ -84,12 +95,11 @@ body {
 }
 
 .login-signup-form .form .message a {
-    color: #7308a7;
+    color: #5b08a7;
     text-decoration: none;
 }
+
 /* Login/Signup form */
-
-
 
 
 #defaultLayout {
@@ -98,11 +108,11 @@ body {
 
 #defaultLayout aside {
     width: 300px;
-    background-color: #7308a7;
+    background-color: #5b08a7;
     padding: 2rem 1rem
 }
 
-#defaultLayout aside > a{
+#defaultLayout aside > a {
     display: block;
     padding: 1rem 2rem;
     border-radius: 6px;
@@ -110,6 +120,7 @@ body {
     text-decoration: none;
     transition: all 0.2s;
 }
+
 #defaultLayout aside > a:hover {
     background-color: rgba(0, 0, 0, 0.2);
 }
@@ -127,6 +138,30 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 #defaultLayout main {
     padding: 2rem;
+}
+
+.animated {
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

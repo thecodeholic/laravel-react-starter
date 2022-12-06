@@ -3,8 +3,10 @@
 * {
     box-sizing: border-box;
 }
-
-html, body, #root, #defaultLayout, #guestLayout {
+html {
+    min-height: 100%;
+}
+body, #root, #defaultLayout, #guestLayout {
     height: 100%;
 }
 
@@ -87,6 +89,10 @@ input:focus {
 .btn:active,
 .btn:focus {
     background: #5b08a7;
+}
+
+.text-center {
+    text-align: center;
 }
 
 table {

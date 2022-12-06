@@ -24,9 +24,14 @@ export default function Users() {
   }
 
   const getUsers = () => {
+    setLoading(true)
     axiosClient.get('/users')
-      .then(({data}) => {
+      .then(({ data }) => {
+        setLoading(false)
         setUsers(data.data)
+      })
+      .catch(() => {
+        setLoading(false)
       })
   }
 
@@ -50,7 +55,7 @@ export default function Users() {
           {loading &&
             <tbody>
             <tr>
-              <td colSpan="5">
+              <td colSpan="5" class="text-center">
                 Loading...
               </td>
             </tr>

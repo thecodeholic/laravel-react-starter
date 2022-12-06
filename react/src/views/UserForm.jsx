@@ -65,7 +65,7 @@ export default function UserForm() {
       <h1>New User</h1>
       <div className="card animated fadeInDown">
         {loading && (
-          <div>
+          <div className="text-center">
             Loading...
           </div>
         )}

@@ -1,7 +1,7 @@
 # Laravel React Example Full Stack Application
 Example Application build with Laravel and React
 
-> The repo was created while I was working on the following [YouTube tutorial][thecodeholic.com](https://youtu.be/qJq9ZMB2Was)
+> The repo was created while I was working on the following [YouTube tutorial](https://youtu.be/qJq9ZMB2Was)
 
 ## Demo
 https://laravel-react.com
